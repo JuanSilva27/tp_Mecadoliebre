@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+body{
+    background-color: var(--grisClaro);
+    font-family: 'Roboto', sans-serif;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration:none;
+    color: black;
+}
+p.precio{
+    font-size: 18px;
+}
+
+:root{
+    --amarillo:#EAC926;
+    --azul:#03264c;
+    --celeste:#1259c3;
+    --grisOscuro:#666;
+    --grisClaro:#ebebeb;
+    --verde: #39b54a;
+}
+
+h2.titulo{
+    font-size: 24px;
+}
