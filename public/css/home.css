@@ -42,13 +42,13 @@ header nav ul{
     display: none;
 }
 
-header nav input{
+header input.menu{
     display: none;
 }
-header nav label {
+header label {
     display: block;
     width: 35px;
-    background-color: var(--azul);
+    background-color: var(--celeste);
     color: white;
     padding: 8px;
     border-radius: 4px;
@@ -134,7 +134,7 @@ h2.copyright{
     text-align: initial;
     font-size: 12px;
     margin-left: 10px;
-    color: var(--grisClaro);
+    color: var(--grisOscuro);
 }
 
 footer section p {
