@@ -3,7 +3,8 @@
 
 /* Header */
 header{
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
     background-color:var(--amarillo);
     width: 100%;
     margin-bottom: 10px;
@@ -13,30 +14,40 @@ header{
 
 header .logo{
     display: block;
-    width: 65%;
+    width: 50%;
     padding: 20px;
 }
 
 p.cuotas {
     display: block;
+    width: 100%;
     text-align: center;
     margin-bottom: 10px;
 }
 
 div.search{
-    margin-left: 1%;
-    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    width: 50%;
 }
-
+div.search input{
+    width: 80%;
+    border: none;
+}
+div.search button{
+    border: none;
+    background-color: white;
+}
 
 ul{
     margin-bottom: 15px;
 }
 
 
-header nav{
+/* header nav{
     margin-left: 1%;
-}
+    display: none;
+} */
 
 header nav ul{
     display: none;
@@ -60,7 +71,7 @@ header label {
 main{
     display: block;
     width: 90%;
-    padding-left: 10%;
+    margin: 0 auto;
 }
 
 section{
@@ -84,18 +95,36 @@ main .descripcion{
     background-color: white;
     border: 1px solid var(--grisClaro);
     padding: 15px;
+    position: relative;
 }
 
 main .descripcion img{
-    width: 10%;
+    width: 30px;
+    height: 30px;
     border: 1px solid var(--verde);
-    border-radius: 90%;
+    border-radius: 50%;
     margin-bottom: 10px;;
+    position: absolute;
+    right: 20px;
+    top: -15px
 }
 
 main .descripcion h3{
     display: none;
     margin-top: 20px;
+}
+
+main .descripcion .precio{
+    width: 30%;
+}
+
+main .descripcion .promo{
+    width: 70%;
+}
+
+main .descripcion {
+    display: flex;
+    align-items: center;
 }
 
 
@@ -144,18 +173,80 @@ footer section p {
 @media (min-width: 361px){
     
     /* Header */
-    header nav ul{
-        display: block;
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
     }
 
-    header nav label{
+    header .logo{
+        width: 33%;
+    }
+
+    header div.search{
+        width: 33%;
+    }
+
+    header  form{
+        width: 100%;
+        text-align: center;
+    }
+
+    header p.cuotas{
+        width: 33%;
+    }
+
+    header nav{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+
+
+    header nav ul.info{
+        width: 50%;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 20px 50px 0 0;
+    }
+
+    header nav ul.usuario{
+        width: 50%;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 20px 0 0 50px;
+    }
+
+
+    header label{
         display: none;
     }
     
     /* Main */
+
+    main section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    main article {
+        width: 40%;
+        margin: 10px;
+    }
     
     main .descripcion h3{
         display: block;
+    }
+
+    main .descripcion{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    main .descripcion .promo{
+        padding-left: 25px;
     }
 
     article{
@@ -166,16 +257,67 @@ footer section p {
 @media (min-width: 769px){
     
     /* Header */
-    header nav ul{
-        display: block;
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
     }
 
-    header nav label{
+    header .logo{
+        width: 33%;
+    }
+
+    header div.search{
+        width: 33%;
+    }
+
+    header  form{
+        width: 100%;
+        text-align: center;
+    }
+
+    header p.cuotas{
+        width: 33%;
+    }
+
+    header nav{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+
+
+    header nav ul.info{
+        width: 50%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    header nav ul.usuario{
+        width: 50%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    header label{
         display: none;
     }
     
     /* Main */
     
+    main section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    main article {
+        width: 20%;
+        margin: 10px;
+        background-color: white;
+    }
     main .descripcion h3{
         display: block;
     }
