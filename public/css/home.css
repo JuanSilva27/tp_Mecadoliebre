@@ -89,6 +89,7 @@ article img{
 
 section article{
     margin-bottom: 10px;
+    background-color: white;
 }
 
 main .descripcion{
@@ -246,7 +247,7 @@ footer section p {
     }
 
     main .descripcion .promo{
-        padding-left: 25px;
+        text-align: end;
     }
 
     article{
