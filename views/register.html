@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="/images/logo-mercado-liebre.svg" alt="logo-mercado-liebre">
+        <div class="search">
+        <form action="search" method="POST">
+            <input type="text" name="search" placeholder="Buscar productos, marcas">
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
+        </div>
+
+        <p class="cuotas"><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de credito </p>
+        <nav>
+            <ul class="info">
+                <li><a href="">Ofertas</a></li>
+                <li><a href="">Tiendas Oficiales</a></li>
+                <li><a href="">Vender</a></li>
+                <li><a href="">Ayuda</a></li>
+            </ul>
+
+            <ul class="usuario">
+                <li><a href="">Creá tu cuenta</a><i class="fas fa-id-card"></i></li>
+                <li><a href="">Ingresá</a><i class="fas fa-sign-in-alt"></i></li>
+                <li><a href="">Mis compras</a><i class="fas fa-shopping-basket"></i></li>
+            </ul>
+
+
+        </nav>
+        <input class="menu" type="checkbox" id='menu'>
+        <label for='menu'>☰</label>
+    </header>
+
+    <main class="register">
+        <form action="registro">
+            <label for="Nombre">Nombre y Apellido</label>
+            <input type="text" placeholder="Ej: Juan Perez" name="Nombre">
+
+            <label for="Usuario">Nombre de usuario</label>
+            <input type="text" placeholder="Ej: JuanPe" name="Usuario">
+
+            <label for="Fecha">Fecha de nacimiento</label>
+            <input type="date" name="Fecha">
+
+            <label for="Domicilio">Domicilio</label>
+            <input type="text" placeholder="Calle Falsa 123" name="Domicilio">
+
+            <label for="Perfil">Perfil del usuario</label>
+            <input type="radio" name="Perfil">
+            <input type="radio" name="Perfil">
+
+        </form>
+
+    </main>
+
+
+    
+</body>
+</html>
