@@ -1,0 +1,95 @@
+.register main{
+    width: 90%;
+    background-color: var(--grisClaro);
+    margin: 0 auto
+}
+
+
+.register main form{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.register main input{
+    width: 80%;
+    border-radius: 5px;
+    border: none;
+    height: 18px;
+}
+
+.register main label{
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.register main div.perfilUsuario{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+}
+.register main div.perfilUsuario p{
+    width: 100%;
+    text-align: center;
+}
+
+.register main div.perfilUsuario input{
+    width: 5%;
+}
+
+.register main div.perfilUsuario label{
+    width: 40%;
+}
+
+.register main div.interes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+
+.register main div.interes p {
+    width: 100%;
+    text-align: center;
+}
+.register main div.interes input {
+    width: 5%;
+    height: 12.8px;
+}
+
+.register main div.interes label{
+    width: 95%;
+}
+
+.register main input.botonSend{
+    width: 45%;
+    background: var(--celeste);
+    border: none;
+    color: white;
+    border-radius: 5px ;
+    height: 32px;
+    margin: 10px 0;
+}
+
+.register main input.botonReset{
+    width: 45%;
+    background: red;
+    border: none;
+    color: white;
+    border-radius: 5px ;
+    height: 32px;
+    margin-bottom: 10px;
+}
+
+
+@media (min-width:361px) {
+    .register main input{
+        width: 70%;
+        height: 32px;
+    }
+}

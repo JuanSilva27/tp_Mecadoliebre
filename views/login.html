@@ -8,7 +8,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <title>Document</title>
 </head>
-<body class="register">
+<body>
     <header>
         <img class="logo" src="/images/logo-mercado-liebre.svg" alt="logo-mercado-liebre">
         <div class="search">
@@ -39,59 +39,17 @@
         <label for='menu'>☰</label>
     </header>
 
-    <main>
-        <form action="/">
-            <label for="Nombre">Nombre y Apellido</label>
-            <input type="text" placeholder="Ej: Juan Perez" minlength="1" name="Nombre">
+    <main class="login">
+        <form class="loginForm" action="/">
 
-            <label for="Usuario">Nombre de usuario</label>
-            <input type="text" minlength="4" maxlength="10" placeholder="Ej: JuanPe" name="Usuario">
+        <label for="Usuario">Usuario</label>
+        <input type="text" id="Usuario" name="Usuario" placeholder="Usuario">
 
-            <label for="Fecha">Fecha de nacimiento</label>
-            <input type="date" name="Fecha">
-
-            <label for="Domicilio">Domicilio</label>
-            <input type="text" placeholder="Calle Falsa 123" name="Domicilio">
-
-            <div class="perfilUsuario">
-                <p>Elige perfil de usuario</p>
-                <input type="radio" id="Comprar" name="Comprador">
-                <label for="Comprar">Comprar</label>
-
-                <input type="radio" id="Vender" name="Vendedor">
-                <label for="Vender">Vender</label>
-            </div>
-
-            <div class="interes">
-                <p>Categorias de interes</p>
-                <input type="checkbox" id="Interes1" name="interes">
-                <label for="Interes1">Electro</label>
-            
-                <input type="checkbox" id="Interes2" name="interes">
-                <label for="Interes2">Moda</label>
-
-                <input type="checkbox" id="Interes3" name="interes">
-                <label for="Interes3">Hogar</label>
-
-                <input type="checkbox" id="Interes4" name="interes">
-                <label for="Interes4">Jugeteria</label>
-
-                <input type="checkbox" id="Interes5" name="interes">
-                <label for="Interes5">Vida Sana</label>
-            </div>
-
-            <label for="foto">Elige foto de Usuario:</label>
-            <input type="file" id="foto" accept=".jpg" name="foto">
-
-            <label for="password">Contraseña:</label>
-            <input type="password" minlength="4" maxlength="8" id="password" name="password">
-
-            <label for="confirm">Confirma Contraseña:</label>
-            <input type="password" minlength="4" maxlength="8" id="confirm" name="confirm">
-
-            <input class="botonSend" type="submit" value="Enviar">
-            <input class="botonReset" type="reset" value= "Borrar">
-
+        <label for="Password">Contraseña</label>
+        <input type="password" id="Password" name="Password" placeholder="Contraseña">
+        
+        <input class="ButtonLogin" type="submit" value="Enviar">
+        
         </form>
 
     </main>
@@ -116,8 +74,5 @@
             <h2 class="copyright">Copyright © 1999-2020 MercadoLiebre S.R.L.</h2>
         </section>
     </footer>
-
-
-    
 </body>
 </html>
