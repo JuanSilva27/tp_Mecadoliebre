@@ -99,6 +99,7 @@ main .descripcion{
     position: relative;
 }
 
+
 main .descripcion img{
     width: 30px;
     height: 30px;
@@ -110,10 +111,16 @@ main .descripcion img{
     top: -15px
 }
 
+main .descripcion img:hover{
+    transform: rotate(-90deg);
+    transition: transform 0.5s linear 0.3s;
+}
+
 main .descripcion h3{
     display: none;
     margin-top: 20px;
 }
+
 
 main .descripcion .precio{
     width: 30%;
@@ -237,7 +244,7 @@ footer section p {
     }
     
     main .descripcion h3{
-        display: block;
+        display: none;
     }
 
     main .descripcion{
@@ -250,7 +257,7 @@ footer section p {
         text-align: end;
     }
 
-    article{
+    article:hover{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 }
@@ -322,8 +329,26 @@ footer section p {
     main .descripcion h3{
         display: block;
     }
+    
 
-    article{
+    article:hover{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    footer i.fas:hover{
+        color: blueviolet;
+    }
+
+    footer .footerSections{
+        width: 25%;
+    }
+
+    footer .copy{
+        width: 100%;
     }
 }
